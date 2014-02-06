@@ -1,11 +1,12 @@
 {
     "name" : "weyland",
-    "version" : "1.0.0",
+    "version" : "1.0.1",
+    "private": true,
     "description":"Durandal's build optimizer.",
     "keywords":["durandal", "build", "require", "spa", "amd"],
-    "preferGlobal": true,
+    "preferGlobal": false,
     "homepage":"http://durandaljs.com/",
-    "bugs":"https://github.com/BlueSpire/Durandal/issues",
+    "bugs":"https://github.com/johnhunter/Weyland/issues",
     "license" : "MIT",
     "author":{
         "name" : "Rob Eisenberg",
@@ -20,7 +21,7 @@
     "bin":{ "weyland" : "./bin/cli.js" },
     "repository":{
         "type" : "git",
-        "url" : "https://github.com/BlueSpire/Durandal"
+        "url" : "https://github.com/johnhunter/Weyland"
     },
     "dependencies" : {
         "commander" : "~1.2.0",
