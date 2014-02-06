@@ -2,6 +2,15 @@
 
 Weyland is Durandal's build optimizer.
 
+## This fork
+
+This fork [johnhunter/Weyland](https://github.com/johnhunter/Weyland) adds some enhancements and pending [pull requests](https://github.com/BlueSpire/Weyland/pulls) from the [upsteam project](https://github.com/BlueSpire/Weyland). Some important differences are:
+
+- Not published on npm so should not be global installed
+ - npm [install as git repo](https://npmjs.org/doc/install.html)
+ - invoke the local cli, e.g. `node ./node_modules/weyland/bin/cli.js build`
+- semver versions are likely to clash with upsteam / other forks
+
 ## Features
 
 * JS Linting
