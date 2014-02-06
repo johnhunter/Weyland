@@ -1,5 +1,10 @@
+/* jshint node:true */
 exports.config = function(weyland) {
-    weyland.build('main')
+        weyland.build({
+            name: 'main',
+            exclude: ['test/**/*.js', 'weyland-config.js'],
+            buildDirectory: './build'
+        })
         .task.jshint({
             include:'App/**/*.js'
         })
