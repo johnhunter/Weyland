@@ -16,3 +16,21 @@ $RECYCLE.BIN/
 .DS_Store
 
 .idea/
+
+# Node packages and log files
+npm-debug.log
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# Folders to ignore
+/node_modules/

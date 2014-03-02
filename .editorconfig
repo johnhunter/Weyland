@@ -1,0 +1,35 @@
+; top-most EditorConfig file
+root = true
+
+; Unix-style newlines with soft tabs
+[*]
+end_of_line = LF
+indent_style = space
+indent_size = 4
+; Remove trailing whitespace and no newline at end of file
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+; Windows-style newlines for Visual Studio
+[*.cs]
+end_of_line = CRLF
+[*.cshtml]
+end_of_line = CRLF
+[*.sln]
+end_of_line = CRLF
+[*.csproj]
+end_of_line = CRLF
+[*.vbproj]
+end_of_line = CRLF
+[*.fsproj]
+end_of_line = CRLF
+[*.dbproj]
+end_of_line = CRLF
+
+; Don't mess with our installed NPM packages
+[node_modules/**]
+end_of_line =
+indent_style =
+indent_size =
+trim_trailing_whitespace =
+insert_final_newline =

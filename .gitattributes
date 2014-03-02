@@ -1,22 +1,102 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+
+
+
+
+# This setting tells git to normalize the files specified on
+# commit, and always convert them to CRLF on checkout. You
+# should use this for files that must retain CRLF endings,
+# even on OSX or Linux.
+
 # Custom for Visual Studio
-*.cs     diff=csharp
-*.sln    merge=union
-*.csproj merge=union
-*.vbproj merge=union
-*.fsproj merge=union
-*.dbproj merge=union
+*.cmd               text eol=crlf
+*.cs                text eol=crlf diff=csharp
+*.cshtml            text eol=crlf diff=csharp
+*.csproj            text eol=crlf
+*.csproj            text eol=crlf merge=union
+*.dbproj            text eol=crlf merge=union
+*.fsproj            text eol=crlf merge=union
+*.msbuild           text eol=crlf
+*.ps1               text eol=crlf
+*.sln               text eol=crlf
+*.sln               text eol=crlf merge=union
+*.tt                text eol=crlf
+*.vbproj            text eol=crlf merge=union
+*.xaml              text eol=crlf
+
+
+
+
+
+# This setting tells git to always normalize the files specified.
+# When committed they are stored with LF, on checkout they are
+# converted to the OS's native line endings.
+*.css               text
+*.editorconfig      text
+*.gitattributes     text
+*.gitignore         text
+*.html              text
+*.js                text
+*.json              text
+*.less              text
+*.md                text
+*.scss              text
+*.svg               text
 
 # Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+*.doc               text diff=astextplain
+*.DOC               text diff=astextplain
+*.docx              text diff=astextplain
+*.DOCX              text diff=astextplain
+*.rtf               text diff=astextplain
+*.RTF               text diff=astextplain
+*.dot               text diff=astextplain
+*.DOT               text diff=astextplain
+
+
+
+
+
+# Denote all files that are truly binary and should not be
+# modified. (binary is a macro for -text -diff)
+*.cache       binary
+*.chm         binary
+*.dacpac      binary
+*.dat         binary
+*.db          binary
+*.deploy      binary
+*.dll         binary
+*.exe         binary
+*.fla         binary
+*.flv         binary
+*.gif         binary
+*.ico         binary
+*.idx         binary
+*.jpeg        binary
+*.jpg         binary
+*.mov         binary
+*.mp3         binary
+*.mp4         binary
+*.nupkg       binary
+*.ogg         binary
+*.p12         binary
+*.pack        binary
+*.pdb         binary
+*.pdf         binary
+*.pfx         binary
+*.png         binary
+*.resources   binary
+*.sdf         binary
+*.snk         binary
+*.suo         binary
+*.swf         binary
+*.webm        binary
+*.wmv         binary
+*.xls         binary
+# Denote font files as binary
+*.eot         binary
+*.otf         binary
+*.ttf         binary
+*.woff        binary
